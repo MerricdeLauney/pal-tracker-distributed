@@ -2,10 +2,10 @@ applications:
 - name: tracker-allocations
   path: ./applications/allocations-server/build/libs/allocations-server.jar
   routes:
-  - route: allocations-pal-turducken.apps.chicken.pal.cfapps.io
+  - route: allocations-pal-turducken.cfapps.io
   memory: 1G
   instances: 1
   env:
-    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-turducken.apps.chicken.pal.cfapps.io
+    REGISTRATION_SERVER_ENDPOINT: http://registration-pal-turducken.cfapps.io
   services:
   - tracker-allocations-database
